@@ -1,4 +1,4 @@
-import CarousselImage1 from "./Assets/Caroussel-image1.svg";
+import CarousselImage1 from "./Assets/BannerImage.svg";
 
 export const navHeader = [
   {

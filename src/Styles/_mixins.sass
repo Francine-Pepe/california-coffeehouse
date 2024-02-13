@@ -21,6 +21,12 @@
     display: flex
     justify-content: space-around
 
+@mixin flex-end
+    display: flex
+    justify-content: flex-end
+    // padding: 1rem 3rem
+    width: 100vw
+
 @mixin navbar-font-style 
     font-family: variables.$links-font
     font-size: variables.$links-font-size
@@ -31,6 +37,39 @@
     display: flex
     justify-content: center
     gap: 1.25rem
+
+@mixin buttons
+    background-color: transparent
+    border: none
+
+// Media Queries
+
+@mixin double-extra-big-screens
+@media(min-width: variables.$breakpoint-xxl)
+
+
+@mixin extra-big-screens
+@media(max-width: variables.$breakpoint-xl)
+
+
+@mixin big-screens
+@media(max-width: variables.$breakpoint-lg)
+
+
+@mixin medium-screens
+@media(max-width: variables.$breakpoint-md)
+    // nav 
+    //     display: flex
+    //     flex-direction: column
+
+
+@mixin small-screens
+@media(max-width: variables.$breakpoint-sm)
+
+
+@mixin extra-small-screens
+@media(max-width: variables.$breakpoint-xs)
+    
 
 
 
