@@ -1,0 +1,38 @@
+@use 'variables'
+
+@mixin flex-column
+    display: flex
+    flex-direction: column
+
+@mixin full-width-containers
+    max-width: 100vw
+    padding: 1rem 3rem
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin flex-space-between
+    display: flex
+    justify-content: space-between
+
+@mixin flex-space-around
+    display: flex
+    justify-content: space-around
+
+@mixin navbar-font-style 
+    font-family: variables.$links-font
+    font-size: variables.$links-font-size
+    color: variables.$light-brown-font-color
+    text-decoration: none
+
+@mixin objects-gap
+    display: flex
+    justify-content: center
+    gap: 1.25rem
+
+
+
+
+
