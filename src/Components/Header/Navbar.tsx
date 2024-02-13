@@ -1,6 +1,7 @@
 import { navHeader } from "../../Data";
 import NavProps from "./NavProps";
 import Logo from "../../Assets/Logo.svg";
+import MobileNav from "./MobileNav";
 
 function Navbar() {
   return (
@@ -17,6 +18,7 @@ function Navbar() {
           <img src={Logo} alt={"Logo"} />
         </a>
       </div>
+      <MobileNav />
     </nav>
   );
 }
