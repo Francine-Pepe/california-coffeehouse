@@ -46,6 +46,10 @@ nav
         align-items: center
         width: 10rem
 
+// ul li:hover
+//     background: unset
+//     color: unset
+
 a
     @include mixins.navbar-font-style
 
@@ -104,28 +108,41 @@ a
 
 button
     @include mixins.buttons
+    @include mixins.box-shadow
 
-.nav-button-toggle
+.nav-button-toggle-icon
         @include mixins.flex-end
 
         img 
-            padding: 1rem 3rem
+            width: 1.875rem
+
+.button-mobile-navbar
+    @include mixins.flex-space-between
+    width: 100vw 
+    padding: 0 3rem   
+
+    a 
+        font-size: 0
+
+        img 
+            width: 5rem
 
 // Media Queries
 
 
 @media(max-width: variables.$breakpoint-md)
     .mobile-nav-container 
-        display: block     
-        margin: 0 auto
-        height: auto  
-        width: 100vw
+        display: block  
 
-        .mobile-nav
+        .mobile-nav-container:hover
+            width: 100vw                         
+
+        .mobile-nav 
             @include mixins.flex-column
-            width: 100%
-            height: auto
-            
+
+            :hover 
+                @include mixins.box-shadow
+
 
     .nav-container, .logo-container
         display: none
