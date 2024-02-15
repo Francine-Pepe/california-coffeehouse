@@ -8,7 +8,7 @@ function MobileNav() {
   const [show, toggleShow] = useState(false);
 
   return (
-    <div className="mobile-nav-container">
+    <section className="mobile-nav-container">
       <button
         onClick={() => toggleShow(!show)}
         className="button-mobile-navbar"
@@ -19,7 +19,7 @@ function MobileNav() {
         {show ? <CloseMobileMenu /> : <OpenMobileMenu />}
       </button>
       <div className="mobile-nav">{show && <MobileMenu />}</div>
-    </div>
+    </section>
   );
 }
 
