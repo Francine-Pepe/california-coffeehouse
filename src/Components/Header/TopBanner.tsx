@@ -5,7 +5,7 @@ import Instagram from "../../Icons/Instagram";
 
 function TopBanner() {
   return (
-    <div className="top-banner-container">
+    <section className="top-banner-container">
       <div className="top-banner-children">
         <Phone />
         <a href="+4940123456789098">+49 40 12345 6789098</a>
@@ -14,7 +14,7 @@ function TopBanner() {
         <Facebook />
         <Instagram />
       </div>
-    </div>
+    </section>
   );
 }
 
