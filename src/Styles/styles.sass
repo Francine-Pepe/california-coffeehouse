@@ -26,6 +26,9 @@ h1, h2, h3, h4, h5, h6, p
     color: variables.$light-brown-font-color
     font-family: variables.$main-font-regular
 
+section
+    section: 100vw
+
 .nav-container 
     @include mixins.flex-space-between
     padding: 2rem 0   
@@ -45,13 +48,12 @@ nav
         justify-content: center
         align-items: center
         width: 10rem
-
-// ul li:hover
-//     background: unset
-//     color: unset
-
+        
 a
     @include mixins.navbar-font-style
+
+p
+    line-height: 2rem
 
 .top-banner-container
     @include mixins.full-width-containers
@@ -83,7 +85,6 @@ a
     object-fit: contain
     contain: content
     position: relative
-    border: 1px solid red
 
     section img
         width: 100%
@@ -101,14 +102,12 @@ a
         transform: translate(-50%, -50%)
 
         p
-            line-height: 2rem
             color: variables.$secondary-font-color
             margin: 0 auto
             padding: 0 5rem
 
 button
     @include mixins.buttons
-    @include mixins.box-shadow
 
 .nav-button-toggle-icon
         @include mixins.flex-end
@@ -118,14 +117,46 @@ button
 
 .button-mobile-navbar
     @include mixins.flex-space-between
+    @include mixins.box-shadow
+
     width: 100vw 
-    padding: 0 3rem   
+    padding: 0.5rem 3rem   
 
     a 
         font-size: 0
 
         img 
             width: 5rem
+
+.about-us-container
+    @include mixins.flex-space-around
+    backgrdound-color: variables.$secondary-background-color
+    max-width: 100vw
+
+    .about-us-image, .about-us-text
+        width: fit-content
+        height: auto
+        padding: 3rem
+
+        img
+            width: 50vw
+            height: auto
+            border-radius: 5px
+
+        button
+            @include mixins.functional-buttons
+
+            a
+                @include mixins.functional-buttons-text
+
+.functional-button:hover
+    @include mixins.functional-buttons-hover
+
+    a:hover
+        @include mixins.functional-buttons-hover
+
+            
+        
 
 // Media Queries
 
@@ -143,9 +174,15 @@ button
             :hover 
                 @include mixins.box-shadow
 
-
     .nav-container, .logo-container
         display: none
+
+    .about-us-container
+        @include mixins.flex-column
+
+        .about-us-image
+            img
+                width: 100%
 
 @media(min-width: variables.$breakpoint-md)
     .mobile-nav-container
