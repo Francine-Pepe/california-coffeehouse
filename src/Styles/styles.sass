@@ -22,7 +22,7 @@ body, html
     padding: 0
     margin: 0
 
-h1, h2, h3, h4, h5, h6, p
+h1, h2, h3, h4, h5, h6, p, small
     color: variables.$light-brown-font-color
     font-family: variables.$main-font-regular
 
@@ -130,7 +130,7 @@ button
 
 .about-us-container
     @include mixins.flex-space-around
-    backgrdound-color: variables.$secondary-background-color
+    background: variables.$secondary-background-color
     max-width: 100vw
 
     .about-us-image, .about-us-text
@@ -139,9 +139,9 @@ button
         padding: 3rem
 
         img
+            @include mixins.border-radius
             width: 50vw
             height: auto
-            border-radius: 5px
 
         button
             @include mixins.functional-buttons
@@ -155,11 +155,85 @@ button
     a:hover
         @include mixins.functional-buttons-hover
 
-            
-        
+.menu
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 100vw
+
+    .menu-container
+        width: fit-content
+        padding: 0 2rem
+        text-align: center
+
+        .menu-title
+            display: flex
+            gap: 2.25rem
+
+    .menu-products
+        display: inline-flex
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+
+        .divider
+            width: 14vw
+
+    #menu-menu-title
+        border-bottom: 2px solid #5A5A5A
+        width: 35vw
+
+        hr
+            width: 33vw
+
+hr
+    width: 10vw
+    height: 1px
+    border-bottom: dotted #5A5A5A
+    border-top: none
+    border-left: none
+    border-right: none
+
+#product
+    text-align: left   
+
+.individual-menu
+    margin: 1rem
+    padding: 1rem 0
+
+    small
+        display: flex
+        justify-content: center
+        margin-top: 2rem
+    
+
+.lateral-info
+    width: 30vw
+    height: 20rem
+    padding: 3.5rem
+    margin: 10% 1rem
+    background-color: variables.$green-background-color-opacity
+
+    img
+        float: right
 
 // Media Queries
 
+@media(max-width: variables.$breakpoint-xl)
+    .menu
+        @include mixins.flex-center
+
+        .menu-container
+            width: 80vw
+
+            .menu-products
+                width: inherit
+
+        #menu-menu-title, .lateral-info
+            width: 70vw
+
+            hr
+                width: 68vw
 
 @media(max-width: variables.$breakpoint-md)
     .mobile-nav-container 
