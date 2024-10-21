@@ -6,6 +6,11 @@ import CakeIcon from "./Assets/Menu icon - Piece of Cake.svg";
 import SandwichIcon from "./Assets/Menu icon - sandwich.svg";
 import OvenIcon from "./Assets/Menu icon - oven.svg";
 import CoffeePlant from "./Assets/Coffee plant.svg";
+import ImageSlider1 from "./Assets/image-slider-1.jpg";
+import ImageSlider2 from "./Assets/image-slider-2.jpg";
+import ImageSlider3 from "./Assets/image-slider-3.jpg";
+import ImageSlider4 from "./Assets/image-slider-4.jpg";
+
 
 export const navHeader = [
   {
@@ -238,3 +243,26 @@ export const lateralInfo = [
     alt: "Coffee Plant",
   },
 ];
+
+export const sliderImages = [
+  {
+    id: 1,
+    image: ImageSlider1,
+    alt: "Coffee shop"
+  },
+  {
+    id: 2,
+    image: ImageSlider2,
+    alt: "Coffee shop"
+  },
+  {
+    id: 3,
+    image: ImageSlider3,
+    alt: "Coffee shop"
+  },
+  {
+    id: 4,
+    image: ImageSlider4,
+    alt: "Coffee shop"
+  },
+]

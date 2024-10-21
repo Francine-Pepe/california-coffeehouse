@@ -1,5 +1,5 @@
 import { navHeader } from "../../Data";
-import NavProps from "./NavProps";
+import NavProps from "../Props/NavProps";
 import Logo from "../../Assets/Logo.svg";
 import MobileNav from "./MobileNav";
 

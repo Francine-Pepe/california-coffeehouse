@@ -2,6 +2,9 @@ import Banner from "./Banner";
 import Navbar from "../Navbar/Navbar";
 import TopBanner from "./TopBanner";
 import CoffeehouseInformation from "./AboutUs";
+import Slider from "../Slider";
+import TextProps from "../Props/TextProps";
+import { BannerText } from "../../Data";
 
 function Header() {
   return (
@@ -9,7 +12,9 @@ function Header() {
       <header className="header-container">
         <TopBanner />
         <Navbar />
-        <Banner />
+        <TextProps data={BannerText} />
+        {/* <Banner /> */}
+        <Slider />
         <CoffeehouseInformation />
       </header>
     </section>
