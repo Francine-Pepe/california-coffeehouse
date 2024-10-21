@@ -1,4 +1,4 @@
-import NavProps from "./NavProps";
+import NavProps from "../Props/NavProps";
 import { navHeader } from "../../Data";
 
 function MobileMenu() {

@@ -2,11 +2,12 @@ import { BannerImage, BannerText } from "../../Data";
 
 function Banner() {
   return (
-    <>
+    <section>
       {BannerImage.map((data, index) => {
         return (
-          <section className="banner-image-container" key={index}>
+          <div className="banner-image-container" key={index}>
             <img src={data.image} alt="" />
+
             {BannerText.map((data, index) => {
               return (
                 <div className="banner-text" key={index}>
@@ -14,10 +15,11 @@ function Banner() {
                 </div>
               );
             })}
-          </section>
+          </div>
         );
       })}
-    </>
+      
+    </section>
   );
 }
 
