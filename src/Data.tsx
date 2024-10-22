@@ -10,6 +10,9 @@ import ImageSlider1 from "./Assets/image-slider-1.jpg";
 import ImageSlider2 from "./Assets/image-slider-2.jpg";
 import ImageSlider3 from "./Assets/image-slider-3.jpg";
 import ImageSlider4 from "./Assets/image-slider-4.jpg";
+import Phone from "./Assets/Icon - Phone.svg";
+import Address from "./Assets/Icon - Address.svg";
+import Email from "./Assets/Icon - email.svg";
 
 
 export const navHeader = [
@@ -264,5 +267,35 @@ export const sliderImages = [
     id: 4,
     image: ImageSlider4,
     alt: "Coffee shop"
+  },
+]
+
+export const contactText = [
+  {
+    id: 1,
+    text: "California Coffeehouse is more than a business to me – it's a labor of love, a dream realized, and a place where the art of coffee meets the art of human connection. Join us in this caffeinated journey, and let's brew memories together, one cup at a time."
+  }
+]
+
+export const contactInformation = [
+  {
+    id: 1,
+    icon: Phone,
+    text: "+49 40 12345 6789098",
+    alt: "California coffee phone"
+  },
+  {
+    id: 2,
+    icon: Email,
+    text: "contact@californiacoffeehouse.com",
+    alt: "California coffee email"
+
+  },
+  {
+    id: 1,
+    icon: Address,
+    text: "Caffeestraße - 17  22888 - Hamburg",
+    alt: "California coffee address"
+
   },
 ]
