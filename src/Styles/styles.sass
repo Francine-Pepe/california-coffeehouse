@@ -173,7 +173,7 @@ button
     .about-us-image, .about-us-text
         width: fit-content
         height: auto
-        padding: 3rem
+        padding: 2rem
 
         img
             width: 50vw
@@ -247,7 +247,7 @@ hr
     width: 30vw
     height: 20rem
     padding: 3.5rem
-    margin: 10% 1rem
+    margin: 10% 5rem
     background-color: variables.$green-background-color-opacity
 
     img
@@ -337,8 +337,63 @@ hr
             opacity: 1
 
 .menu-animated-image
+
     @include mixins.full-width-containers
-    @include mixins.flex-center    
+    @include mixins.flex-center  
+
+.contact-container
+    width: 100%   
+    
+    p, h1
+        color: variables.$secondary-font-color
+
+    h1
+        font-family: variables.$links-font
+        text-align: center
+        font-size: 3rem
+        font-weight: 100
+
+.footer-container
+    @include mixins.full-width-containers  
+    background-color: variables.$green-background-color
+    background-image: url("https://live.staticflickr.com/65535/54083500480_443e6df8c0_o.png")
+    background-repeat: no-repeat
+    object-fit: cover
+    background-position: top left
+   
+
+    .box-container
+        // @include mixins.flex-center
+        display: flex
+        justify-content: center
+        width: 100%
+        border-top: 1px solid variables.$lighter-background-color
+        border-bottom: 1px solid variables.$lighter-background-color
+
+        p
+            font-size: variables.$font-size-medium-size
+
+        .contact-box
+            width: 40%
+            border: 1px solid variables.$lighter-background-color
+            border-radius: 10px
+            padding: 1rem 3.5rem
+            margin: 3rem 1rem
+            background-color: variables.$green-background-color   
+
+            p
+                line-height: 2.2
+
+            .contact-box-information
+                @include mixins.flex-start
+
+                p
+                    line-height: 1
+
+.footer
+    padding: 1.5rem 0
+    text-align: center
+    
 
 // Media Queries
 
@@ -360,9 +415,14 @@ hr
 
 @media(max-width: variables.$breakpoint-lg)
     .banner-image-container 
-        .banner-text, .text-container 
+        .banner-text
             p
-                padding: 0 3rem
+                width: 100vw
+                padding: 0 2rem
+
+    .text-container 
+        p
+            padding: 0
 
     .about-us-container
         @include mixins.flex-column
@@ -370,6 +430,22 @@ hr
         .about-us-image
             img
                 width: 100%
+
+    .contact-content
+
+        .box-container
+            @include mixins.flex-column
+            width: 100%
+            justify-content: center
+
+            .contact-box
+                width: 80%
+                margin: 2rem auto
+                padding: 2rem
+
+    .lateral-info
+        margin: 0
+        margin-bottom: 2rem
 
 @media(max-width: variables.$breakpoint-md)
     .mobile-nav-container 
@@ -386,6 +462,8 @@ hr
 
     .nav-container, .logo-container
         display: none
+
+    
 
     
 

@@ -30,6 +30,11 @@
     display: flex
     justify-content: flex-end
 
+@mixin flex-start
+    display: flex
+    justify-content: flex-start
+    gap: 1rem
+
 @mixin navbar-font-style 
     font-family: variables.$links-font
     font-size: variables.$links-font-size
@@ -67,6 +72,12 @@
 
 @mixin border-radius
     border-radius: 5px
+
+@mixin color-white
+.footer small
+    color: variables.$secondary-font-color
+    font-size: variables.$font-size-text
+    
 
 // Media Queries
 
