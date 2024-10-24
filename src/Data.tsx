@@ -13,7 +13,7 @@ import ImageSlider4 from "./Assets/image-slider-4.jpg";
 import Phone from "./Assets/Icon - Phone.svg";
 import Address from "./Assets/Icon - Address.svg";
 import Email from "./Assets/Icon - email.svg";
-
+import Coffee from "./Assets/coffee-beans_.png";
 
 export const navHeader = [
   {
@@ -58,6 +58,7 @@ export const AboutUsContent = [
     alt: "about us",
     text: "My love affair with coffee began long before California Coffee came to life. The idea of creating a space where coffee isn't just a beverage, but a cherished experience, has been a dream nurtured over countless cups and shared moments. Growing up, I found solace in the ritual of brewing the perfect cup, and that passion has now blossomed into the heart and soul of this coffeehouse.",
     button: "continue reading",
+    bgImage: Coffee,
   },
 ];
 
@@ -251,51 +252,49 @@ export const sliderImages = [
   {
     id: 1,
     image: ImageSlider1,
-    alt: "Coffee shop"
+    alt: "Coffee shop",
   },
   {
     id: 2,
     image: ImageSlider2,
-    alt: "Coffee shop"
+    alt: "Coffee shop",
   },
   {
     id: 3,
     image: ImageSlider3,
-    alt: "Coffee shop"
+    alt: "Coffee shop",
   },
   {
     id: 4,
     image: ImageSlider4,
-    alt: "Coffee shop"
+    alt: "Coffee shop",
   },
-]
+];
 
 export const contactText = [
   {
     id: 1,
-    text: "California Coffeehouse is more than a business to me – it's a labor of love, a dream realized, and a place where the art of coffee meets the art of human connection. Join us in this caffeinated journey, and let's brew memories together, one cup at a time."
-  }
-]
+    text: "California Coffeehouse is more than a business to me – it's a labor of love, a dream realized, and a place where the art of coffee meets the art of human connection. Join us in this caffeinated journey, and let's brew memories together, one cup at a time.",
+  },
+];
 
 export const contactInformation = [
   {
     id: 1,
     icon: Phone,
     text: "+49 40 12345 6789098",
-    alt: "California coffee phone"
+    alt: "California coffee phone",
   },
   {
     id: 2,
     icon: Email,
     text: "contact@californiacoffeehouse.com",
-    alt: "California coffee email"
-
+    alt: "California coffee email",
   },
   {
     id: 1,
     icon: Address,
     text: "Caffeestraße - 17  22888 - Hamburg",
-    alt: "California coffee address"
-
+    alt: "California coffee address",
   },
-]
+];

@@ -9,8 +9,10 @@ function AboutUs() {
               <img src={data.image} alt={data.alt} />
             </div>
             <div className="about-us-text">
-              <p>{data.text}</p>
-              <button className="functional-button"><a href="/">{data.button}</a></button>
+              <div className="text">
+                <p>{data.text}</p>
+              </div>
+              <img src={data.bgImage} alt="" />
             </div>
           </div>
         );

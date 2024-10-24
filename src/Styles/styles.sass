@@ -22,14 +22,20 @@ body, html
     padding: 0
     margin: 0
 
-h1, h2, h3, h4, h5, h6, p, small
+h2, h3, h4, h5, h6, p, small
     color: variables.$light-brown-font-color
     font-family: variables.$main-font-regular
+
+h1
+    font-family: variables.$links-font
+    text-align: center
+    font-size: 3rem
+    font-weight: 100
 
 section
     section: 100vw
 
-.about-us-container .about-us-image img, .slide, .lateral-info
+.about-us-container .about-us-image img, .slide, .lateral-info, .about-us-text, .contact-box
     @include mixins.border-radius
 
 .nav-container 
@@ -57,6 +63,7 @@ a
 
 p
     line-height: 2rem
+    font-size: variables.$font-size-text
 
 .top-banner-container
     @include mixins.full-width-containers
@@ -165,25 +172,43 @@ button
         img 
             width: 5rem
 
+.about-us-text
+    position: relative
+    width: 50%
+    height: 50%    
+    border: 1px solid variables.$brown-color 
+
+    .text
+        position: absolute
+        top: 0
+
+        p 
+            color: variables.$dark-green-color
+            background-color: variables.$secondary-color-less-opacity
+
+
+    img
+        width: fit-content
+
 .about-us-container
     @include mixins.flex-space-around
-    background: variables.$secondary-background-color
     max-width: 100vw
 
     .about-us-image, .about-us-text
-        width: fit-content
+        @include mixins.flex-center
+        width: 43.5vw
         height: auto
-        padding: 2rem
+        margin: 2rem 1rem
 
         img
-            width: 50vw
-            height: auto
+            width: inherit
+            object-fit: contain
 
-        button
-            @include mixins.functional-buttons
+        .text
+            width: 90%
 
-            a
-                @include mixins.functional-buttons-text
+            p
+                color: variables.$brown-color
 
 .functional-button:hover
     @include mixins.functional-buttons-hover
@@ -191,10 +216,13 @@ button
     a:hover
         @include mixins.functional-buttons-hover
 
-.menu
+.menu-wrapped
+    width: 100vw
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: center
+
+.menu
     max-width: 100vw
 
     .menu-container
@@ -256,7 +284,7 @@ hr
 .carousel 
     @include mixins.flex-center
     position: relative
-    margin: 2rem 3rem
+    margin: 2rem 3rem 0 3rem
 
     .carousel-arrow        
         @include mixins.flex-space-between
@@ -337,9 +365,9 @@ hr
             opacity: 1
 
 .menu-animated-image
-
     @include mixins.full-width-containers
-    @include mixins.flex-center  
+    background-color: variables.$green-background-color
+    color: variables.$secondary-font-color
 
 .contact-container
     width: 100%   
@@ -347,11 +375,6 @@ hr
     p, h1
         color: variables.$secondary-font-color
 
-    h1
-        font-family: variables.$links-font
-        text-align: center
-        font-size: 3rem
-        font-weight: 100
 
 .footer-container
     @include mixins.full-width-containers  
@@ -376,7 +399,7 @@ hr
         .contact-box
             width: 40%
             border: 1px solid variables.$lighter-background-color
-            border-radius: 10px
+            // border-radius: 10px
             padding: 1rem 3.5rem
             margin: 3rem 1rem
             background-color: variables.$green-background-color   
@@ -397,12 +420,23 @@ hr
 
 // Media Queries
 
+@media(min-width: variables.$breakpoint-lg) and (max-width: variables.$breakpoint-xl)
+    .about-us-text        
+        .text
+            top: unset
+            p
+                font-size: 1rem
+
 @media(max-width: variables.$breakpoint-xl)
     .menu
-        @include mixins.flex-center
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        max-width: 80vw
 
-        .menu-container
-            width: 80vw
+        .menu-container            
+            width: inherit
+            text-align: left
 
             .menu-products
                 width: inherit
@@ -412,6 +446,10 @@ hr
 
             hr
                 width: 68vw
+
+    .about-us-text        
+        .text
+            top: unset
 
 @media(max-width: variables.$breakpoint-lg)
     .banner-image-container 
@@ -427,9 +465,16 @@ hr
     .about-us-container
         @include mixins.flex-column
 
-        .about-us-image
+        .about-us-image, .about-us-text
+            width: 93vw
+            margin: 2rem auto           
+
             img
-                width: 100%
+                width: inherit
+
+            .text
+                width: 90%
+                
 
     .contact-content
 
@@ -439,7 +484,7 @@ hr
             justify-content: center
 
             .contact-box
-                width: 80%
+                width: 87%
                 margin: 2rem auto
                 padding: 2rem
 
