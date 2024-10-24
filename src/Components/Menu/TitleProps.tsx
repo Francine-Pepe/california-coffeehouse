@@ -1,17 +1,18 @@
 function TitleProps(props: any) {
-  const { icon, title } = props;
+  const { data } = props;
 
   return (
     <section className="menu">
-      <div className="menu-container" id="menu-menu-title">
-        <div className="menu-title">
-          <img src={icon} alt="" />
-          <h1>{title}</h1>
-        </div>
-        <hr />
+      {data.map((data: { icon: string; title: string }, index: any) => (
+        <div className="menu-container" id="menu-menu-title">
+          <div className="menu-title">
+            <img src={data.icon} alt="" />
+            <h2>{data.title}</h2>
+          </div>
 
-      </div>
-      
+          <hr />
+        </div>
+      ))}
     </section>
   );
 }

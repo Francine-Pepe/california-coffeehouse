@@ -11,10 +11,11 @@ function Menu() {
   return (
     <section className="menu-container">
       <div className="menu-animated-image">
-        <AnimatedImage />
+        {/* <AnimatedImage /> */}
+        <h1>Menu</h1>
       </div>
 
-      <div className="menu">
+      <div className="menu menu-wrapped">
         <CoffeeMenu />
         <TeaMenu />
         <CakeMenu />
