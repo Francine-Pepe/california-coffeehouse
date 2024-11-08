@@ -4,7 +4,7 @@ function TitleProps(props: any) {
   return (
     <section className="menu">
       {data.map((data: { icon: string; title: string }, index: any) => (
-        <div className="menu-container" id="menu-menu-title">
+        <div className="menu-container" id="menu-menu-title" key={index}>
           <div className="menu-title">
             <img src={data.icon} alt="" />
             <h2>{data.title}</h2>
