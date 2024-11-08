@@ -1,6 +1,5 @@
 {
   "name": "california-coffeehouse",
-  "homepage": "https://francine-pepe.github.io/california-coffeehouse/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
