@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/california-coffeehouse/static/css/main.539fae24.css",
-    "main.js": "/california-coffeehouse/static/js/main.f37259d4.js",
+    "main.js": "/california-coffeehouse/static/js/main.9c22a491.js",
     "static/js/592.d84546c2.chunk.js": "/california-coffeehouse/static/js/592.d84546c2.chunk.js",
     "static/media/Coffee plant.svg": "/california-coffeehouse/static/media/Coffee plant.3ef51a6f57829c59e66ebd373528befc.svg",
     "static/media/Logo.svg": "/california-coffeehouse/static/media/Logo.53c47739710d671595e09b50bd7c1413.svg",
@@ -28,11 +28,11 @@
     "static/media/Mobile Menu.svg": "/california-coffeehouse/static/media/Mobile Menu.e4a8c895158f26aef8b08c92925f2b99.svg",
     "static/media/Close mobile menu.svg": "/california-coffeehouse/static/media/Close mobile menu.327a7857704a056e7b480d8e374998bd.svg",
     "main.539fae24.css.map": "/california-coffeehouse/static/css/main.539fae24.css.map",
-    "main.f37259d4.js.map": "/california-coffeehouse/static/js/main.f37259d4.js.map",
+    "main.9c22a491.js.map": "/california-coffeehouse/static/js/main.9c22a491.js.map",
     "592.d84546c2.chunk.js.map": "/california-coffeehouse/static/js/592.d84546c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.539fae24.css",
-    "static/js/main.f37259d4.js"
+    "static/js/main.9c22a491.js"
   ]
 }
