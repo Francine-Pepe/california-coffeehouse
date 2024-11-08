@@ -9,11 +9,9 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <HashRouter basename={process.env.PUBLIC_URL}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </HashRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
