@@ -3,8 +3,8 @@ function MenuProps(props: any) {
   return (
     <section className="menu">
       {data.map((data: { product: string; price: string }, index: any) => (
-        <div className="menu-container">
-          <div className="menu-products" key={index}>
+        <div className="menu-container" key={index}>
+          <div className="menu-products">
             <div className="divider" id="product">
               <h3>{data.product}</h3>
             </div>

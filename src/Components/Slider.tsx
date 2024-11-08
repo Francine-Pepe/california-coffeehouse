@@ -16,7 +16,7 @@ function Slider(props: any) {
   };
 
   return (
-    <section className="carousel ">
+    <section className="carousel container">
       <div className="carousel-content ">
         {sliderImages.map((item: any, i: any) => {
           return (

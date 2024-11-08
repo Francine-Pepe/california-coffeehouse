@@ -6,16 +6,17 @@ import SandwichesMenu from "./SandwichesMenu";
 import BakedGoodsMenu from "./BakedGoodsMenu";
 import LateralInfo from "./LateralInfo";
 import AnimatedImage from "../AnimatedImage";
+import Shop from "../Shop";
 
 function Menu() {
   return (
-    <section className="menu-container">
+    <section className="menu-container" id="menu">
       <div className="menu-animated-image">
         {/* <AnimatedImage /> */}
         <h1>Menu</h1>
       </div>
 
-      <div className="menu menu-wrapped">
+      <div className="menu menu-wrapped" >
         <CoffeeMenu />
         <TeaMenu />
         <CakeMenu />

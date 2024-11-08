@@ -9,7 +9,7 @@ function Navbar() {
       {navHeader.map((data, index) => {
         return (
           <div className="nav-container" key={index}>
-            <NavProps id={data.id} name={data.name} link={data.link} />
+            <NavProps id={data.link} name={data.name} link={data.link} />
           </div>
         );
       })}

@@ -4,7 +4,7 @@ function AboutUs() {
     <section>
       {AboutUsContent.map((data, index) => {
         return (
-          <div className="about-us-container" key={index}>
+          <div className="about-us-container container" key={index} id="about">
             <div className="about-us-image">
               <img src={data.image} alt={data.alt} />
             </div>
