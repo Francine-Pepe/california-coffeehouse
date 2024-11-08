@@ -9,6 +9,7 @@ function Footer() {
   return (
     <footer className="footer-container container">
       <Contact text={contactText} contact={contactInformation} />
+
       <div className="footer">
         <a
           href="https://www.francinemelopepe.de/"
