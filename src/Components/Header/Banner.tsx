@@ -5,7 +5,7 @@ function Banner() {
     <section>
       {BannerImage.map((data, index) => {
         return (
-          <div className="banner-image-container" key={index}>
+          <div className="banner-image-container container" key={index}>
             <img src={data.image} alt="" />
 
             {BannerText.map((data, index) => {
