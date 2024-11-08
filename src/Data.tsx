@@ -18,24 +18,25 @@ import Coffee from "./Assets/coffee-beans_.png";
 export const navHeader = [
   {
     name: "About",
-    link: "/about",
-    id: 0,
+    link: "#about",
+    id: "about",
   },
   {
     name: "Menu",
-    link: "/menu",
-    id: 1,
+    link: "#menu",
+    id: "menu",
   },
   {
     name: "Shop",
-    link: "/shop",
-    id: 3,
+    link: "#page404",
+    id: "page404",
   },
   {
     name: "Contact",
-    link: "/contact",
-    id: 4,
+    link: "#contact",
+    id: "contact",
   },
+
 ];
 
 export const BannerImage = [
